@@ -20,9 +20,9 @@ app.use(express.json({ limit: "10kb" }));
 
 app.use(mongoSanitize());
 
-app.use(hpp());
+app.use(xss());
 
-app.use();
+app.use("/api", hpp());
 
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
