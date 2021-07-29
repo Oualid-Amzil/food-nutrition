@@ -1,0 +1,30 @@
+[
+  {
+    "name": "tomato",
+    "price": 2,
+    "vitamins": ["A", "B", "C"],
+    "healthBenefits": "good for skin",
+    "from": "moroco"
+  },
+  {
+    "name": "carrot",
+    "price": 6,
+    "vitamins": ["B", "E"],
+    "healthBenefits": "good for your eyes",
+    "from": "moroco"
+  },
+  {
+    "name": "cucumber",
+    "price": 8,
+    "vitamins": ["A", "E", "K"],
+    "healthBenefits": "good for something",
+    "from": "italy"
+  },
+  {
+    "name": "beetsr",
+    "price": 4,
+    "vitamins": ["A", "B12", "D"],
+    "healthBenefits": "good for something",
+    "from": "algery"
+  }
+]
