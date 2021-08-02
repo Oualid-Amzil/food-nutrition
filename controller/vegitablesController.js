@@ -3,12 +3,6 @@ const APIFeatures = require("../util/apiFeatures");
 const catshAsync = require("./../util/catshAsync");
 const AppError = require("./../util/appError");
 
-exports.morocoVegies = (req, res, next) => {
-  req.query.from = "moroco";
-  req.query.fields = "name,price";
-  next();
-};
-
 exports.getAllVegitables = catshAsync(async (req, res, next) => {
   // BUILD QUERY
   const features = new APIFeatures(Vegitable.find(), req.query)

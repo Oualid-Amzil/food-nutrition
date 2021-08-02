@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Carrots",
+    "energy": "173 KJ (41 Kcal)",
+    "carbohydrates": "9.6 g",
+    "fat": "0.24 g",
+    "proteine": "0.93 g",
+    "vitamins": ["Vitamin C", "Vitamine E", "Vitamin A", "Niacin (B3)"],
+    "minerals": ["Calcium", "Potassium", "Sodium", "Phosphorus", "Magnesium"],
+    "healthBenefits": "",
+    "origin": "Persia"
+  },
+  {
+    "name": "Cucumber",
+    "energy": "85 KJ (16 Kcal)",
+    "carbohydrates": "3.63 g",
+    "fat": "0.11 g",
+    "proteine": "0.65 g",
+    "vitamins": ["Pantothenic acid (B5)", "vitamin C"],
+    "minerals": ["Potassium", "Magnesium", "Calcium", "Phosphorus"],
+    "healthBenefits": "",
+    "origin": "Southern Asia"
+  },
+  {
+    "name": "Beets",
+    "energy": "180 KJ(43 Kcal)",
+    "carbohydrates": "9.56 g",
+    "fat": "0.17 g",
+    "proteine": "1.61 g",
+    "vitamins": ["Vitamin C", "Folate (B9)", "Pantothenic acid (B5)", "Niacin (B3)"],
+    "minerals": ["Calcium", "Potassium", "Sodium", "Phosphorus", "Manganese"],
+    "healthBenefits": "",
+    "origin": "Europe and Near East"
+  },
+  {
+    "name": "Pepper",
+    "energy": "84 KJ(20 Kcal)",
+    "carbohydrates": "4.64 g",
+    "fat": "0.17 g",
+    "proteine": "0.86 g",
+    "vitamins": ["Vitamin C", "Vitamine E", "Niacin (B3)"],
+    "minerals": ["Calcium", "Magnesium", "Sodium", "potassium", "Phospgorus"],
+    "healthBenefits": "",
+    "origin": "North and South America"
+  },
+  {
+    "name": "Tomato",
+    "energy": "74 KJ(18 Kcal)",
+    "carbohydrates": "3.9 g",
+    "fat": "0.2 g",
+    "proteine": "0.9 g",
+    "vitamins": ["Vitamin E", "Vitamin C", "Niacin (B3)"],
+    "minerals": ["Potassium", "Phosphorus", "Magnesium"],
+    "healthBenefits": "",
+    "origin": "South America"
+  }
+]

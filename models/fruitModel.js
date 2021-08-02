@@ -3,34 +3,43 @@ const mongoose = require("mongoose");
 const fruitSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: [true, "Fruit must have a name"],
+    require: [true, "vegetable must have a name"],
     unique: true,
     trim: true,
   },
-  price: {
-    type: Number,
+  energy: {
+    type: String,
+  },
+  carbohadrates: {
+    type: String,
+  },
+  protein: {
+    type: String,
+  },
+  fat: {
+    type: String,
   },
   vitamins: {
     type: [String],
-    require: [true, "Fruit must have vitamins"],
+    require: [true, "vegetable must have vitamins"],
     trim: true,
+  },
+  minerals: {
+    type: [String],
+    require: [true, "vegetable must have minerals"],
   },
   healthBenefits: {
     type: String,
     trim: true,
   },
-  From: {
+  Origin: {
     type: String,
     trim: true,
-  },
-  Organic: {
-    type: Boolean,
   },
   createdAt: {
     type: Date,
     default: Date.now(),
   },
-  startDates: [Date],
 });
 
 const Fruit = mongoose.model("Fruit", fruitSchema);

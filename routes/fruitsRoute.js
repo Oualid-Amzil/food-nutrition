@@ -1,6 +1,6 @@
 const express = require("express");
 
-const fruitesController = require("./../controller/fruitesController");
+const fruitesController = require("../controller/fruitesController");
 
 const router = express.Router();
 

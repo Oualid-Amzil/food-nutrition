@@ -1,16 +1,8 @@
 const express = require("express");
 
-const vegitablesController = require("./../controller/vegitablesController");
-const authController = require("./../controller/authController");
+const vegitablesController = require("../controller/vegitablesController");
 
 const router = express.Router();
-
-router
-  .route("/moroco-vegitables")
-  .get(
-    vegitablesController.morocoVegies,
-    vegitablesController.getAllVegitables
-  );
 
 router
   .route("/specific-vitamins/:vitamine")

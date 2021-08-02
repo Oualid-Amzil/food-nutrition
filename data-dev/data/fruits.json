@@ -1,23 +1,57 @@
 [
   {
-    "name": "avocado",
-    "price": 6,
-    "vitamins": "A, K, C, B12, omega3",
-    "healthBenefits": "good for your mind",
-    "from": "mixico"
+    "name": "",
+    "energy": "",
+    "carbohydrates": "",
+    "fat": "",
+    "proteine": "",
+    "vitamins": [""],
+    "minerals": [""],
+    "healthBenefits": "",
+    "origin": ""
   },
   {
-    "name": "orange",
-    "price": 1,
-    "vitamins": "K, C",
-    "healthBenefits": "good for your immune system",
-    "from": "moroco"
+    "name": "",
+    "energy": "",
+    "carbohydrates": "",
+    "fat": "",
+    "proteine": "",
+    "vitamins": [""],
+    "minerals": [""],
+    "healthBenefits": "",
+    "origin": ""
   },
   {
-    "name": "banana",
-    "price": 3,
-    "vitamins": "K, C, B, potasium",
-    "healthBenefits": "good for something",
-    "from": "kotdevoir"
+    "name": "",
+    "energy": "",
+    "carbohydrates": "",
+    "fat": "",
+    "proteine": "",
+    "vitamins": [""],
+    "minerals": [""],
+    "healthBenefits": "",
+    "origin": ""
+  },
+  {
+    "name": "",
+    "energy": "",
+    "carbohydrates": "",
+    "fat": "",
+    "proteine": "",
+    "vitamins": [""],
+    "minerals": [""],
+    "healthBenefits": "",
+    "origin": ""
+  },
+  {
+    "name": "",
+    "energy": "",
+    "carbohydrates": "",
+    "fat": "",
+    "proteine": "",
+    "vitamins": [""],
+    "minerals": [""],
+    "healthBenefits": "",
+    "origin": ""
   }
 ]
