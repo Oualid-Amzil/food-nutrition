@@ -1,11 +1,11 @@
 const express = require("express");
 const morgan = require("morgan");
-const AppError = require("./util/appError");
+const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controller/errorController");
 
-const vegitablesRoute = require("./router/vegitablesRoute");
-const fruitsRoute = require("./router/fruitesRoute");
-const userRouter = require("./router/userRouter");
+const vegetablesRoute = require("./routes/vegetablesRoute");
+const fruitsRoute = require("./routes/fruitsRoute");
+const userRouter = require("./routes/userRoute");
 const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
@@ -36,7 +36,7 @@ const limiter = rateLimit({
 
 app.use("/api", limiter);
 
-app.use("/api/v1/vegies", vegitablesRoute);
+app.use("/api/v1/vegies", vegetablesRoute);
 app.use("/api/v1/fruits", fruitsRoute);
 app.use("/api/v1/users", userRouter);
 

@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config({ path: `${__dirname}/../config.env` });
 
-process.on("uncaughtException", (err) => {
-  console.log("UNCAUGHT EXCEPTION! Shuting down ...");
-  console.log(err.name, err.message);
-  process.exit(1);
-});
+// process.on("uncaughtException", (err) => {
+//   console.log("UNCAUGHT EXCEPTION! Shuting down ...");
+//   console.log(err.name, err.message);
+//   process.exit(1);
+// });
 
 const app = require("./app");
 
@@ -23,7 +23,7 @@ mongoose
 
 const port = process.env.PORT || 8000;
 
-const server = app.listen(5000, () => {
+const server = app.listen(port, () => {
   console.log(
     `Server running in ${process.env.NODE_ENV} mode on port ${port}...`
   );

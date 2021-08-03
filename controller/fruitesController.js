@@ -1,7 +1,7 @@
-const Fruit = require("../models/fruitsModel");
-const APIFeatures = require("./../util/apiFeatures");
-const catshAsync = require("./../util/catshAsync");
-const AppError = require("./../util/appError");
+const Fruit = require("../models/fruitModel");
+const APIFeatures = require("./../utils/apiFeatures");
+const catshAsync = require("./../utils/catshAsync");
+const AppError = require("./../utils/appError");
 
 exports.getAllFruits = catshAsync(async (req, res, next) => {
   const feature = new APIFeatures(Fruit.find(), req.query)

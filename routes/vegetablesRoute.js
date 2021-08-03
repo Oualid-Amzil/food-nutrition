@@ -1,26 +1,27 @@
 const express = require("express");
 
-const vegitablesController = require("../controller/vegitablesController");
+const vegetablesController = require("../controller/vegetablesController");
+const authController = require("./../controller/authController");
 
 const router = express.Router();
 
 router
   .route("/specific-vitamins/:vitamine")
-  .get(vegitablesController.containVitamine);
+  .get(vegetablesController.containVitamine);
 
 router
   .route("/")
-  .get(authController.protect, vegitablesController.getAllVegitables)
-  .post(vegitablesController.createVegitable);
+  .get(vegetablesController.getAllVegetables)
+  .post(vegetablesController.createVegetable);
 
 router
   .route("/:id")
-  .get(vegitablesController.getVegitable)
-  .patch(vegitablesController.updateVegitable)
+  .get(vegetablesController.getVegetable)
+  .patch(vegetablesController.updateVegetable)
   .delete(
     authController.protect,
-    authController.restrict("admin", "doctor"),
-    vegitablesController.deleteVegitable
+    authController.restrictTo("user"),
+    vegetablesController.deleteVegetable
   );
 
 module.exports = router;

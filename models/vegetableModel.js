@@ -3,9 +3,10 @@ const mongoose = require("mongoose");
 const vegetableSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: [true, "vegetable must have a name"],
+    required: [true, "vegetable must have a name"],
     unique: true,
     trim: true,
+    minlength: 4,
   },
   energy: {
     type: String,
@@ -21,12 +22,12 @@ const vegetableSchema = new mongoose.Schema({
   },
   vitamins: {
     type: [String],
-    require: [true, "vegetable must have vitamins"],
+    required: [true, "vegetable must have vitamins"],
     trim: true,
   },
   minerals: {
     type: [String],
-    require: [true, "vegetable must have minerals"],
+    required: [true, "vegetable must have minerals"],
   },
   healthBenefits: {
     type: String,
